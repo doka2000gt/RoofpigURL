@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FBLP_pattern_150</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/larspetrus/Roofpig@master/roofpig_and_three.min.js"></script>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #111;
+  color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.nav a {
+  background: #f6d365;
+  color: #111;
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 7px 10px;
+  display: inline-block;
+  margin: 2px;
+}
+.nav a.secondary { background: #e8f4ff; }
+.card {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 10px;
+  margin: 8px 0;
+}
+.roofpig {
+  width: 420px;
+  height: 500px;
+  max-width: 100%;
+  background: #111;
+  margin: 0 auto;
+}
+.roofpig canvas {
+  filter: brightness(1.08) saturate(1.12);
+}
+.alg {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+.meta {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 12px;
+  color: #bbb;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+@media(max-width: 520px) {
+  .roofpig { width: 360px; height: 460px; }
+  .alg { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>203. FBLP_pattern_150</h1>
+    <div class="nav">
+      <a class="secondary" href="../index.html">一覧</a>
+      <a href="FBLP_pattern_149.html">前へ</a>
+      <a href="FBLP_pattern_151.html">次へ</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="roofpig" data-config="setupmoves=x&#x27; F&#x27; r F&#x27;|alg=F r&#x27; F|colored=LC LF LB UL UFL UBL|colors=F:o B:r U:w D:y R:g L:b|hover=far|flags=startsolved|speed=1100"></div>
+  </div>
+
+  <div class="card">
+    <div><b>Algorithm</b></div>
+    <div class="alg">F r&#x27; F</div>
+  </div>
+
+  <div class="card">
+    <div><b>SetupMoves</b></div>
+    <div class="alg">x&#x27; F&#x27; r F&#x27;</div>
+  </div>
+
+  <details class="card">
+    <summary>Roofpig config</summary>
+    <div class="meta">setupmoves=x&#x27; F&#x27; r F&#x27;|alg=F r&#x27; F|colored=LC LF LB UL UFL UBL|colors=F:o B:r U:w D:y R:g L:b|hover=far|flags=startsolved|speed=1100</div>
+  </details>
+</div>
+</body>
+</html>
